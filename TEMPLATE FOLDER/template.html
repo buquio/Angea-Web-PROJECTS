@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title></title>
+  <!-- site css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- goolefont -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <!-- or -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+  <!-- ion-icon -->
+  <!-- put the <script> before </body> -->
+</head>
+
+
+<!--A. USING ion-icon download each icon inside image folder & include the script link close to </body>-->
+<ion-icon name="heart"></ion-icon>
+<ion-icon name="calendar-outline"></ion-icon>
+<!-- <ion-icon name="Document"></ion-icon> -->
+<ion-icon name="icon-folder"></ion-icon>
+<ion-icon size="large" ios="heart-outline" md="heart-sharp"></ion-icon>
+
+<!-- A2 -->
+<!-- Note: you can also put it in image folder like pictures add .svg & include icon- for icon usage-->
+<div class="icons">
+  <div class="icon"><a href=""><img src="images/icon-document.svg"></a></div>
+  <div class="icon"><a href=""><img src="images/icon-folder.svg"></a></div>
+  <div class="icon"><a href=""><img src="images/icon-upload.svg"></a></div>
+
+  <div class="icon"><a href=""><img src="images/Document.svg"></a></div>
+  <div class="icon"><a href=""><img src="images/calendar-outline.svg"></a></div>
+
+</div>
+
+
+<!-- ion-icon styling with css-->
+ion-icon {
+font-size: 64px;
+color: blue;
+}
+
+<!--B. using direct SVG -->
+    <img class="img3" src="images/online.svg" alt="">
+
+
+<!--C. USING bootstrap SVG  -->
+<!-- 1 embedded -->
+<li class="header-item"><a href="#" class="header-link"><svg class="bi bi-chevron-right" width="32" height="32"
+      viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+        d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" />
+      </svg></a></li>
+      
+    <!-- 2 sprite -->
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="bootstrap-icons.svg#heart-fill" />
+    </svg>
+    <!-- 3 external image -->
+    <img src="bootstrap-icons-1.1.0/bootstrap.svg" alt="" width="32" height="32" title="Bootstrap">
+    <img src="bootstrap-icons-1.1.0/briefcase.svg" alt="" width="32" height="32" title="Bootstrap">
+  
+    <!-- 4 CSS-->
+    .bi::before {
+    display: inline-block;
+    content: "";
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'>
+      <path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd' /></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    }
+
+
+    <body>
+      <div>
+        <header></header>
+        <section></section>
+        <footer></footer>
+      </div>
+
+      <script></script>
+      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    </body>
+
+</html>
