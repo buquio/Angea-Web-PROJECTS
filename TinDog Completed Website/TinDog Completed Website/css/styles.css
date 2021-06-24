@@ -166,6 +166,10 @@ p {
   margin: 20px 10px;
 }
 
+
+/* NOTE ALL THE STYLES ABOVE APPLY FOR 0-991PX */
+
+
 @media (max-width: 1028px) {
 
   #title {
