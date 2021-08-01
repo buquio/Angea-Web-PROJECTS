@@ -1,20 +1,11 @@
-//dectecting buttonclick
+//adding click event listener on all buttons
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
-
 for (var i = 0; i < numberOfDrumButtons; i++) {
-
-  //adding click(one thing) to different drumbuttons--use for loop but
-    //to add differnt sounds to differnt keys --use switch statement 
-
-
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {//performs this function
-    //this.style.color="white";
-    //OR
-    //first check which button was click,
-    //then pass the innerhtml that was clicked to makesound function
-    var buttonInnerHTML = this.innerHTML;//buttoninnerHtml contains keys(w,a,s,d,j,k,l)that can be used as switch cases
-    makeSound(buttonInnerHTML);//the function is put inside a named function since it will be used inside keypress too.
-
+var eachDrum = document.querySelectorAll(".drum")[i]
+  eachDrum.addEventListener("click", function() {
+    //first check which button was clicked
+    var buttonInnerHTML = this.innerHTML;//contains either keys(w,a,s,d,j,k,l)so which particular one?
+    makeSound(buttonInnerHTML); //then pass the innerhtml that was clicked to makesound function
     buttonAnimation(buttonInnerHTML);
 
   });
@@ -23,11 +14,10 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
 //dectecting keyboard press
 document.addEventListener("keypress", function(event) {//add eventlistener to the keyboard keys
-//keypress triggers function to show e.g an alert,also allows it to pass in a parameter e.g(event)
+//keypress triggers function that allows it to pass in a parameter e.g(event)
 //so we can tap into the events different properties.
 // console.log(event)--press any key-its shows which specific key was pressed& passes it to makesound
   makeSound(event.key);
-
   buttonAnimation(event.key);
 
 });
@@ -88,10 +78,9 @@ function makeSound(key) {
 function buttonAnimation(currentKey) {
 
   var activeButton = document.querySelector("." + currentKey);
-
   activeButton.classList.add("pressed");
 
-  setTimeout(function() {
+  setTimeout(function() { //takes a function & time in milisecs
     activeButton.classList.remove("pressed");
   }, 100);
 
