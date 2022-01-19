@@ -107,7 +107,8 @@ p {
 }
 
 .icon {
-  color: #ef8172;
+  /* color: #ef8172; */
+  color: #ff4c68;
   margin-bottom: 1rem;
 }
 
@@ -118,7 +119,9 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-  background-color: #ef8172;
+  /* background-color: #ef8172; */
+  background-color: #ff4c68;
+
 }
 
 .testimonial-text {
@@ -134,7 +137,8 @@ p {
 
 
 #press {
-  background-color: #ef8172;
+  /* background-color: #ef8172; */
+  background-color: #ff4c68;
   padding-bottom: 3%;
 }
 
